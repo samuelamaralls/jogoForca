@@ -1,0 +1,13 @@
+classe
+objeto
+heranca
+agua
+polimorfismo
+nome
+bebida
+tudo
+java
+php
+javascript
+node
+ts
