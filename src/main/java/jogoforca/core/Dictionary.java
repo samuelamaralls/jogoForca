@@ -3,12 +3,11 @@ package jogoforca.core;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 import jogoforca.game.GameException;
 import jogoforca.utils.RandomUtils;
 
 public class Dictionary {
-
+		
 	private static final String FILE_NAME = "dicionario.txt";
 
 	//desingn pattern singleton
@@ -30,6 +29,8 @@ public class Dictionary {
 		return instance;
 	}
 
+	
+	
 	private void load() {
 
 		try (Scanner scan = 
@@ -47,7 +48,7 @@ public class Dictionary {
 	}
 
 	public Word nextWord() {
-		int pos = RandomUtils.newRandomNumber(7, 12);
+		int pos = RandomUtils.newRandomNumber(0, 12);
 		return new Word(words.get(pos));
 	}
 }
